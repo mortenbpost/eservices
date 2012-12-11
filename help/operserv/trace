@@ -1,0 +1,8 @@
+Syntax: TRACE <mask>
+     
+You can trace users on the network matching their user@host. This
+command supports wildcards and is therefore very powerful. However,
+output will be truncated at 100 matches.
+  
+SEE ALSO:
+  -

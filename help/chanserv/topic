@@ -1,0 +1,7 @@
+Syntax: TOPIC <#channel> <text>
+ 
+This command will allow you to change the topic on <#channel> if you
+have the appropriate access.
+  
+SEE ALSO:
+  -

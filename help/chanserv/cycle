@@ -1,0 +1,13 @@
+Syntax: CYCLE <#channel>
+  
+CYCLE makes the channel service cycle the channel specified, ie. part
+the channel, join the channel and be opped by services.
+ 
+This command should only be used in case of a desync, that is, if it
+for some reason is not opped, due to a netsplit/netjoin.
+ 
+Abuse of this command will most likely result in a ban from the 
+network and the channel will be disabled immediately.
+ 
+SEE ALSO:
+  -

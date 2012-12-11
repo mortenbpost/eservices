@@ -1,0 +1,12 @@
+Syntax: COMMENT <#channel> ADD <comment>
+        COMMENT <#channel> REM <id>
+        COMMENT <#channel> LIST
+ 
+This command is used for maintaining comments on <#channel>.
+ 
+COMMENT ADD will add a comment to <#channel>.
+COMMENT REM will remove a comment from the channel's comments list.
+COMMENT LIST lists all comments on <#channel>.
+ 
+SEE ALSO:
+  -

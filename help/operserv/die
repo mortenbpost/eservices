@@ -1,0 +1,12 @@
+Syntax: DIE <confirm string> <reason>
+    
+DIE will shutdown the services completely! It will not be possible to
+restart service without shell access, so please use this command with
+caution.
+    
+A confirm string must be issued to complete this command.  If you 
+don't know the confirm string you probably shouldn't have access to
+this command.
+   
+SEE ALSO:
+  -

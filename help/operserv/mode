@@ -1,0 +1,8 @@
+Syntax: MODE <#channel> <modes [mode parameters]>
+     
+MODE sets modes on <#channel> according to the <modes [mode parameters]>
+string. Valid modes are (+/-) milksp as well as channel mode b.  This 
+command should only be use when absolutely neccesary.
+     
+SEE ALSO:
+  OP

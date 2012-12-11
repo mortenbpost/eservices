@@ -1,0 +1,43 @@
+# Makefile
+# $Id: Makefile.in,v 1.1 2003/02/21 23:16:17 mr Exp $
+#
+
+CC=@CC@
+INCLUDE=-I../../include
+CFLAGS=@DEBUG@ -pipe -Wall ${INCLUDE} @CFLAGS@
+
+SRC = \
+        auth.c \
+        chpass.c \
+        comment.c \
+        drop.c \
+        forbid.c \
+        ghost.c \
+        help.c \
+        info.c \
+        pass.c \
+        register.c \
+        set.c \
+        whois.c
+
+OBJS = ${SRC:%.c=%.o}
+
+all: info comp
+
+build: info comp  
+        
+info:
+	@echo ""   
+	@echo "*                   Building NickServ commands                       *"
+	@echo " \`------------------------------------------------------------------´"
+        
+comp: ${OBJS}
+
+
+.SUFFIXES: .c .o
+
+.c.o:
+	${CC} ${CFLAGS} -c $< -o $@
+
+clean:
+	rm -f *.o

@@ -1,0 +1,8 @@
+Syntax: OP <#channel>
+    
+OP gives channel operator status to your current nickname in channel. 
+If you have access to the channel, consider using the OP command in 
+channel services instead.
+   
+SEE ALSO:
+  MODE

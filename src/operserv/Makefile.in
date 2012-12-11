@@ -1,0 +1,42 @@
+# Makefile
+# $Id: Makefile.in,v 1.1 2003/02/21 23:16:56 mr Exp $
+#
+
+CC=@CC@
+INCLUDE=-I../../include
+CFLAGS=@DEBUG@ -pipe -Wall ${INCLUDE} @CFLAGS@
+
+SRC = \
+        access.c \
+        broadcast.c \
+        die.c \
+        gline.c \
+        help.c \
+        mode.c \
+        op.c \
+        operlist.c \
+        remoper.c \
+        trace.c \
+        ungline.c
+
+OBJS = ${SRC:%.c=%.o}
+
+all: info comp
+
+build: info comp  
+        
+info:
+	@echo ""   
+	@echo "*                   Building OperServ commands                       *"
+	@echo " \`------------------------------------------------------------------´"
+        
+comp: ${OBJS}
+
+
+.SUFFIXES: .c .o
+
+.c.o:
+	${CC} ${CFLAGS} -c $< -o $@
+
+clean:
+	rm -f *.o

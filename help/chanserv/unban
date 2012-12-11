@@ -1,0 +1,7 @@
+Syntax: UNBAN <#channel> <id>
+  
+This command will unban the ban with <id> on <#channel>. If the
+concerned ban is currently active on <#channel> it will be removed.
+   
+SEE ALSO:
+  BAN, BANLIST, KICKBAN

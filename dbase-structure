@@ -1,0 +1,102 @@
+# Exiled.Net IRC Services.
+# mySQL database initialisation file.
+# ($Id: dbase-structure,v 1.3 2003/02/25 23:48:37 mr Exp $)
+
+USE services;
+
+CREATE TABLE nickdata
+(
+  nick          VARCHAR(255)      NOT NULL DEFAULT ""   UNIQUE PRIMARY KEY,           INDEX idx_nick (nick(5)),
+  email         VARCHAR(255)      NOT NULL DEFAULT ""   UNIQUE,                       INDEX idx_email (email(5)),
+  password      VARCHAR(255)      NOT NULL DEFAULT "",
+  userhost      VARCHAR(255)      NOT NULL DEFAULT "",
+  lastlogin     INT(8)            UNSIGNED              DEFAULT 0,
+  regdate       INT(8)            UNSIGNED              DEFAULT 0,
+  info          TEXT              NOT NULL DEFAULT "",
+  flags         INT(8)            UNSIGNED              DEFAULT 0,
+  console       INT(8)            UNSIGNED              DEFAULT 0
+);
+
+CREATE TABLE chandata
+(
+  name          VARCHAR(255)      NOT NULL DEFAULT ""   UNIQUE, PRIMARY KEY(name),    INDEX idx_chan (name(5)),
+  owner         VARCHAR(255)      NOT NULL DEFAULT "",
+  topic         VARCHAR(255)      NOT NULL DEFAULT "",
+  keepmode      VARCHAR(255)      NOT NULL DEFAULT "",
+  flags         INT(8)            UNSIGNED              DEFAULT 0,
+  lastlogin     INT(8)            UNSIGNED              DEFAULT 0
+);
+
+CREATE TABLE access
+(
+  channel       VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_acc_channel (channel(5)),
+  nick          VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_acc_nick (nick(5)),
+  level         INT(8)            UNSIGNED              DEFAULT 0
+);
+
+CREATE TABLE comment
+(
+  subject       VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_com_subject (subject(5)),
+  nick          VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_com_nick (nick(5)),
+  comment       TEXT              NOT NULL DEFAULT "",
+  com_date      INT(8)            UNSIGNED              DEFAULT 0
+);
+
+CREATE TABLE notice
+(
+  nick          VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_noti_nick (nick(5)),
+  sender        VARCHAR(255)      NOT NULL DEFAULT "",
+  notice        VARCHAR(255)      NOT NULL DEFAULT "",
+  com_date      INT(8)            UNSIGNED              DEFAULT 0
+);
+
+CREATE TABLE log_nickserv
+(
+  cmd_date      INT(8)            UNSIGNED              DEFAULT 0,
+  nick          VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_log_nick_nick (nick(5)),
+  userhost      VARCHAR(255)      NOT NULL DEFAULT "",
+  command       VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_log_nick_cmd (command(5)),
+  params        TEXT              NOT NULL DEFAULT ""
+);
+
+CREATE TABLE log_chanserv
+(
+  cmd_date      INT(8)            UNSIGNED              DEFAULT 0,
+  nick          VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_log_chan_nick (nick(5)),
+  userhost      VARCHAR(255)      NOT NULL DEFAULT "",
+  command       VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_log_chan_cmd (command(5)),
+  params        TEXT              NOT NULL DEFAULT ""
+);
+
+CREATE TABLE log_operserv
+(
+  cmd_date      INT(8)            UNSIGNED              DEFAULT 0,
+  nick          VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_log_oper_nick (nick(5)),
+  userhost      VARCHAR(255)      NOT NULL DEFAULT "",
+  command       VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_log_oper_cmd (command(5)),
+  params        TEXT              NOT NULL DEFAULT ""
+);
+
+CREATE TABLE log_multiserv
+(
+  cmd_date      INT(8)            UNSIGNED              DEFAULT 0,
+  nick          VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_log_multi_nick (nick(5)),
+  userhost      VARCHAR(255)      NOT NULL DEFAULT "",
+  command       VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_log_multi_cmd (command(5)),
+  params        TEXT              NOT NULL DEFAULT ""
+);
+
+CREATE TABLE log_wallops
+(
+  wa_date       INT(8)            UNSIGNED              DEFAULT 0,
+  nick          VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_log_wallops_from (nick(5)),
+  msg           TEXT              NOT NULL DEFAULT ""
+);
+
+CREATE TABLE bans
+(
+  chan          VARCHAR(255)      NOT NULL DEFAULT "",                                INDEX idx_bans_chan (chan(5)),
+  mask          VARCHAR(255)      NOT NULL DEFAULT "",
+  expire        INT(8)            UNSIGNED              DEFAULT 0,
+  nick          VARCHAR(255)      NOT NULL DEFAULT ""
+);

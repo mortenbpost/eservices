@@ -1,0 +1,7 @@
+Syntax: KICK <#channel> <nickname> <reason>
+  
+This command will allow users with the appropriate access on
+<#channel> to kick <nickname> from the channel. 
+  
+SEE ALSO
+  KICKBAN BAN

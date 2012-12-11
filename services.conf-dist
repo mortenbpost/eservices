@@ -1,0 +1,63 @@
+# Exiled.Net IRC Services.
+# Example configuration file.
+# $Id: services.conf-dist,v 1.1.1.1 2002/08/20 15:20:02 mr Exp $
+
+# ###############################
+# GENERAL                       #
+# ###############################
+
+UPLINK server.exiled.net
+PORT 4400
+HOST Services.Exiled.Net
+PASS linkpassword
+NUMERIC PP
+
+# ###############################
+# LOGGING                       #
+# ###############################
+
+LOGFILE services.log
+
+# ###############################
+# mySQL                         #
+# ###############################
+
+MYSQL_DATABASE services
+MYSQL_USERNAME services
+MYSQL_PASSWORD Exiled
+# MYSQL_UNIXSOCK "/tmp/unix.sock"
+MYSQL_HOST localhost
+MYSQL_PORT 3306
+
+# ###############################
+# NICKSERV                      #
+# ###############################
+
+
+NICKSERV_NICK NS
+NICKSERV_USERNAME NickServ
+NICKSERV_USERINFO Exiled.net IRC Service
+
+# ###############################
+# CHANSERV                      #
+# ###############################
+
+CHANSERV_NICK E
+CHANSERV_USERNAME ChanServ
+CHANSERV_USERINFO Exiled.net IRC Service
+
+# ###############################
+# OPERSERV                      #
+# ###############################
+
+OPERSERV_NICK OS
+OPERSERV_USERNAME OperServ
+OPERSERV_USERINFO Exiled.net IRC Service
+
+# ###############################
+# MULTISERV                     #
+# ###############################
+
+MULTISERV_NICK Exiled
+MULTISERV_USERNAME MultiServ
+MULTISERV_USERINFO Exiled.net IRC Service

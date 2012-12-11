@@ -1,0 +1,13 @@
+Syntax: REGISTER <email> [password]
+    
+It is required that you register your nickname before you can use the
+services. Registration is instant. If no password is given a random
+password will be generated. It is strongly recommended that you use
+a strong password, with upper case, a number and a special character.
+   
+After registration you can customize your account with the SET
+command. You will have to authenticate each time you logon in order
+to use services.
+  
+SEE ALSO:
+  AUTH, PASS, SET

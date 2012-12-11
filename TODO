@@ -1,0 +1,53 @@
+Exilen.Net IRC Services.
+TODO ($Id: TODO,v 1.14 2003/02/27 12:07:01 cure Exp $)
+
+######################################################################
+Remember:
+  Premature optimisation is the root of all evil - Knuth
+  Debugging is at least twice as difficult as programming.  So if you
+  write a program that uses all of your ability, you'll never be able
+  to debug it all.
+                                   ("stolen" from the ircu TODO file)
+######################################################################
+Remember:
+  it's not a bug; it's a feature!
+  annoying features, please  report.
+######################################################################
+
+[+] In progress
+
+##### HIGH PRIORITY ##################################################
+
+[X] Split up chanserv.c, operserv.c nickserv.c and multiserv.c into
+    smaller files. 
+    
+[+] Catch up on commenting *ugh*. 
+
+[ ] Implement the long awaited SET command in channel service.
+
+[+] Split up GREP command. One for NickServ and one for ChanServ.
+
+##### LOWER PRIORITY #################################################
+
+[+] Make it possible to set noexpire on channels and nicknames.
+    Currently only working for channels.
+
+[ ] Make it possible via a setting from setup.h to decide whether
+    recently dropped channels can be registered again instantly.
+
+[ ] Have a look at operserv ACCESS command.
+
+[+] Auto-op, if deopped due to net-join after net-split.
+    Perhaps a function in OS to do a force-cycle on a channel.
+
+[ ] nickserv_info: Status must be either active/expired or disabled.
+
+[X] When unregging an expired or disabled channel -- don't make E
+    leave the channel as it is not there.
+
+##### IDEAS ##########################################################
+
+[ ] Make a command in chanserv to reg a channel to services.
+    ie. a possibility to reg official channels to a non-user nick,
+    and automatically setting the channel no-expire, and adding
+    the user issuing the command with level 499

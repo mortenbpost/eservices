@@ -1,0 +1,10 @@
+Syntax: PASS <oldpass> <password> 
+   
+If you wish to change your password for your registered nickname you
+can do it by using the PASS command. 
+    
+Due to the irreversibility of this command, it must be validated
+with the owner's old password to his/her nickserv account.
+    
+SEE ALSO:
+  AUTH 

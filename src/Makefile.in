@@ -1,0 +1,81 @@
+# Makefile
+# $Id: Makefile.in,v 1.2 2003/02/21 23:10:27 mr Exp $
+#
+
+CC=@CC@
+INCLUDE=-I../include
+CFLAGS=@DEBUG@ -pipe -Wall ${INCLUDE} @CFLAGS@
+
+LDFLAGS=@LDFLAGS@
+LIBS=@LIBS@
+
+
+SRC = \
+        channels.c \
+        chanserv.c \
+        config.c \
+        db_server.c \
+        dbase.c \
+        dcc.c \
+        errors.c \
+        help.c \
+        log.c \
+        main.c \
+        misc_func.c \
+        multiserv.c \
+        nicks.c \
+        nickserv.c \
+        operserv.c \
+        p10.c \
+        parser.c \
+        queue.c \
+        server.c \
+        timer.c \
+        version.c
+
+
+OBJS = ${SRC:%.c=%.o}
+
+all: vers services
+
+build: vers services
+
+.SUFFIXES: .c .o
+
+.c.o:
+	${CC} ${CFLAGS} -c $< -o $@
+
+vers:
+	@echo ""
+	@echo "*               Generate BUILD and OS information                    *"
+	@echo " \`------------------------------------------------------------------´"
+	@echo "char *build_date = \"`date`\";" > version.c
+	@echo "char *os_name    = \"`uname -srm`\";" >> version.c
+	@cat version.c
+	@echo ""
+	@echo "*                      Building object files                         *"
+	@echo " \`------------------------------------------------------------------´"
+
+services: ${OBJS}
+	@cd nickserv; make all; cd ..
+	@cd chanserv; make all; cd ..
+	@cd operserv; make all; cd ..
+	@cd multiserv; make all; cd ..
+	@echo ""
+	@echo "*                    Linking the object files                        *"
+	@echo " \`------------------------------------------------------------------´"
+	${CC} ${CFLAGS} ${OBJS} nickserv/*.o chanserv/*.o operserv/*.o multiserv/*.o ${LDFLAGS} ${LIBS} -o services
+	cp services ..
+	@echo ""
+	@echo "*                             Done!                                  *"
+	@echo " \`------------------------------------------------------------------´"
+
+clean:
+	@echo "*                     Removing object files                          *"
+	@echo " \`------------------------------------------------------------------´"
+	rm -f services *.o
+	@cd nickserv; make clean; cd ..
+	@cd chanserv; make clean; cd ..
+	@cd operserv; make clean; cd ..
+	@cd multiserv; make clean; cd ..
+

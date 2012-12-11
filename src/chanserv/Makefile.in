@@ -1,0 +1,62 @@
+# Makefile
+# $Id: Makefile.in,v 1.1 2003/02/21 23:15:23 mr Exp $
+#
+
+CC=@CC@
+INCLUDE=-I../../include
+CFLAGS=@DEBUG@ -pipe -Wall ${INCLUDE} @CFLAGS@
+
+SRC = \
+        access.c \
+        autoop.c \
+        ban.c \
+        banlist.c \
+        chowner.c \
+        clearmodes.c \
+        comment.c \
+        cycle.c \
+        deop.c \
+        deopme.c \
+        devoice.c \
+        disable.c \
+        drop.c \
+        enable.c \
+        grep.c \
+        help.c \
+        info.c \
+        invite.c \
+        kick.c \
+        kickban.c \
+        list.c \
+        noexpire.c \
+        op.c \
+        opme.c \
+        register.c \
+        removeme.c \
+        showcommands.c \
+        topic.c \
+        unban.c \
+        unreg.c \
+        voice.c
+
+
+OBJS = ${SRC:%.c=%.o}
+
+all: info comp
+
+build: info comp
+
+info:
+	@echo ""
+	@echo "*                   Building ChanServ commands                       *"
+	@echo " \`------------------------------------------------------------------´"
+
+comp: ${OBJS}
+
+.SUFFIXES: .c .o
+
+.c.o:
+	${CC} ${CFLAGS} -c $< -o $@
+
+clean:
+	rm -f *.o

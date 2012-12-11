@@ -1,0 +1,7 @@
+Syntax: GLINE <user@host> <duration> <reason>
+   
+GLINE issues a network wide ban on <user@host> lasting duration. For 
+info about the format of duration, see HELP BAN in channel services.
+   
+SEE ALSO:
+  UNGLINE

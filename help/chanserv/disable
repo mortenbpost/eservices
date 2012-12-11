@@ -1,0 +1,9 @@
+Syntax: DISABLE <#channel>
+   
+This command will cause <#channel> to be disabled. Channel service
+will part <#channel> and the channel will be listed as a disabled
+channel. After disabling a channel it would be apropriate to 
+attach a comment to it.
+  
+SEE ALSO:
+  LIST, COMMENT, UNDISABLE

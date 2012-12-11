@@ -1,0 +1,14 @@
+Syntax: FORBID <ADD> <registered nickname> <reason>
+        FORBID <REM> <id>
+        FORBID LIST 
+     
+You can ban the usage of a nickname on the network by using the 
+FORBID ADD command. The service will unregister the nickname and then
+place a jupe on the nickname. The reason will be displayed in the
+nickname's userinfo. This is done using the FORBID ADD command.
+      
+You can remove a forbidden nickname by using the FORBID REM command,
+or list all forbidden nickname with the FORBID LIST command.
+   
+SEE ALSO:
+  INFO 

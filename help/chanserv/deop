@@ -1,0 +1,7 @@
+Syntax: DEOP <#channel> [{nickname,...}]
+   
+This command will deop the specified nicknames on <#channel>. If no
+nicknames are specified you will be deopped.
+  
+SEE ALSO:
+  OP, OPME, DEOPME

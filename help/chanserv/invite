@@ -1,0 +1,7 @@
+Syntax: INVITE <#channel>
+ 
+This command allows users with the appropriate access on <#channel>
+to invite themself to an invite only channel.
+ 
+SEE ALSO:
+  CLEARMODES

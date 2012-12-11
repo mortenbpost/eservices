@@ -1,0 +1,8 @@
+Syntax: NOEXPIRE <#channel>
+  
+This will toggle noexpire on/off on <#channel>. When a channel is set
+to noexpire it will never expire and will ever be disabled by channel
+service.
+   
+SEE ALSO:
+  LIST

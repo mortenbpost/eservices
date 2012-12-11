@@ -1,0 +1,7 @@
+Syntax: KICKBAN <#channel> <nickname> <reason>
+ 
+This command is similar to KICK, though when using this command the
+<nickname> will also be banned from <#channel>.
+ 
+SEE ALSO:
+  KICK, BAN

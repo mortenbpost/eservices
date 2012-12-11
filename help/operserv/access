@@ -1,0 +1,20 @@
+Syntax: ACCESS <nickname> [+access | -access]
+   
+ACCESS allows admins to modify or view a user's access
+in the service. 
+   
+Flags available:
+   
+  M: Access to mode-commands
+  G: Access to gline-commands
+  n: NickServ Oper
+  N: NickServ Admin     (implies +n)
+  c: ChanServ Oper
+  C: ChanServ Admin     (implies +c)
+  a: Services Sub-Admin (implies +MGNC)
+  A: Services Admin     (implies +MGNCa)
+   
+  P: DCC Interface
+    
+SEE ALSO:
+  OPERLIST 

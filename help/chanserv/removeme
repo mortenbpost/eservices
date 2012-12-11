@@ -1,0 +1,8 @@
+Syntax: REMOVEME <#channel> <password>
+  
+This command will allow you to remove yourself from the access list
+on <#channel>. Due to the risk of making a mistake you have to apply
+your <password>.
+  
+SEE ALSO:
+  - 

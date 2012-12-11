@@ -1,0 +1,7 @@
+Syntax: ENABLE <#channel>
+  
+This command enables a previous disabled or expired channel.
+It would be appropriate to set a comment on <#channel>.
+  
+SEE ALSO:
+  LIST, COMMENT, DISABLE

@@ -1,0 +1,7 @@
+Syntax: DEVOICE <#channel> [{nickname,...}]
+ 
+DEVOICE will devoice all given nicks on <#channel>. If you
+don't pass a nickname as an argument it will deop you instead.
+ 
+SEE ALSO:
+  VOICE 

@@ -1,0 +1,6 @@
+Syntax: BANLIST <#channel>
+  
+This command will list all bans set on <#channel>.
+  
+SEE ALSO:
+  BAN UNBAN KICKBAN

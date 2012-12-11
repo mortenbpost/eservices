@@ -1,0 +1,7 @@
+Syntax: SHOWCOMMANDS <#channel>
+ 
+SHOWCOMMANDS will display all commands available to you on the
+specified channel.
+ 
+SEE ALSO
+  REGISTER, ACCESS

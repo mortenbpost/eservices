@@ -1,0 +1,7 @@
+Syntax: OPME
+  
+This command will op you on all channels where you have the
+appropriate access.
+  
+SEE ALSO:
+  OP, DEOP, DEOPME

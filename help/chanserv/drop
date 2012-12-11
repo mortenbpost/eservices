@@ -1,0 +1,8 @@
+Syntax: DROP <#channel> <password>
+
+With this command channel owners have the option to drop their
+channel. Due to the risk of making a mistake the owner has to apply
+his/her's password.
+    
+SEE ALSO:
+  - 

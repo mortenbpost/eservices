@@ -1,0 +1,26 @@
+Syntax: SET <option> <parameters>
+    
+SET is used to customize your nickname settings.
+    
+OPTION can be one of:
+    
+  EMAIL   Associate an E-mail address with your nickname.
+    Parameters: <new email>
+    
+  SECRET  Hides certain information from INFO.
+    Parameters: <on/off>
+  
+  INFO    Set your personal info string.
+    Parameters: <string up to 255 chars>
+   
+  PRIVMSG Set recieve form to either NOTICE (off) or PRIVMSG (on)
+    Parameters: <on/off>
+   
+  OPER    Activate your IRC Operator account in services.
+    Parameters: <on/off>
+     
+Please note that it is required that you have a valid email set at
+any time!
+    
+SEE ALSO:
+  REGISTER, AUTH

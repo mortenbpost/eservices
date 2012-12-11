@@ -1,0 +1,15 @@
+Syntax: ACCESS <#channel> <SET|REM|LIST> [registered nickname] [level]
+  
+This command is used to maintain the access list on <#channel>. Users
+with the appropriate access on <#channel> will be able to add, remove
+or modify a user's access.
+  
+ACCESS <#channel> SET will add <registered nickname> to the access 
+list at <level> or modify <nick>'s access if he/she is already on the
+access list.
+  
+ACCESS <#channel> REM will remove <registered nickname> from the access list.
+ACCESS <#channel> LIST will list all users with access on <#channel>.
+  
+SEE ALSO:
+  -

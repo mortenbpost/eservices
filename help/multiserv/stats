@@ -1,0 +1,12 @@
+Syntax: STATS <b|d|o>
+
+STATS b
+  Shows bandwidth statictics.
+
+STATS d
+  Shows information about the database, ie. number of
+  registered channels and nick. Number of online users
+  and currently global channels.
+
+STATS o
+  Shows a list of all online global opers.

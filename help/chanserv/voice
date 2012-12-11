@@ -1,0 +1,7 @@
+Syntax: VOICE <#channel> [{nickname,...}]
+   
+This command will voice the specified users on <#channel>. If no
+nicks are specified it will voice yourself.
+ 
+SEE ALSO:
+  DEVOICE 

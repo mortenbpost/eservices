@@ -1,0 +1,12 @@
+Syntax: GHOST <nickname> <password>
+      
+If you suddenly get disconnected from your isp or the irc server, 
+sometimes a ghosted client will be left behind. This command can
+be used to kill the ghosted client so you can get your registered
+nickname back.
+   
+GHOST can also be used to recover a registered nickname if it's 
+taken by another user who is not the rightful owner of the nickname.
+   
+SEE ALSO:
+  REGISTER, AUTH

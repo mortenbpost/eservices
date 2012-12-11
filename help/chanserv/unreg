@@ -1,0 +1,8 @@
+Syntax: UNREG <#channel> FORCE
+  
+This command will unregister <#channel>. You have to put the string
+"FORCE" (without the quotes) after the <#channel> argument in order
+to succesfully unregister a channel.
+  
+SEE ALSO:
+  -

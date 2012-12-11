@@ -1,0 +1,8 @@
+Syntax: WHOIS [nickname]
+     
+Displays authentication information about the given nickname. If
+nickname is not given it will display information about your own
+nickname.
+  
+SEE ALSO:
+  INFO

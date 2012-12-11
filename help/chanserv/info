@@ -1,0 +1,6 @@
+Syntax: INFO <#channel>
+      
+INFO displays various information about a given registered channel.
+     
+SEE ALSO: 
+  REGISTER

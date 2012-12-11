@@ -1,0 +1,10 @@
+Syntax: REGISTER <#channel>
+ 
+REGISTER registers <#channel> with the channel service. Channel 
+Service will join your channel, and you will be the owner with 
+level 500.
+ 
+Channel registrations are instant.
+ 
+SEE ALSO:
+  SHOWCOMMANDS, ACCESS, DROP

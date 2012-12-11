@@ -1,0 +1,8 @@
+Syntax: CHPASS <registered nickname> <password> 
+    
+Under rare circumstances you will have to change a user's
+password. This should only be necessary if the user request it,
+and you are required to notify the user after the change.
+     
+SEE ALSO:
+  PASS 

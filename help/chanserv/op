@@ -1,0 +1,7 @@
+Syntax: OP <#channel> [{nickname,...}]
+ 
+This command will op the specified nicks on <#channel>. If no nicks
+are specified it will op yourself on <#channel>.
+ 
+SEE ALSO:
+  OPME, DEOP, DEOPME, ACCESS

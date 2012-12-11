@@ -1,0 +1,6 @@
+Syntax: UNGLINE <user@host>
+
+UNGLINE removes a network wide ban earlier set with the GLINE command.
+   
+SEE ALSO:
+  GLINE

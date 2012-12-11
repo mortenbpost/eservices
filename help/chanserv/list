@@ -1,0 +1,11 @@
+Syntax: LIST <disabled|expired|noexpire>
+  
+This command will list the appropriate channels depending on the
+argument.
+  
+LIST DISABLED will list all disabled channels.
+LIST EXPIRED will list all expired channels.
+LIST NOEXPIRE will list all channels that are set to noexpire.
+  
+SEE ALSO:
+  -

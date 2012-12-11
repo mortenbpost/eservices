@@ -1,0 +1,33 @@
+# Makefile
+# $Id: Makefile.in,v 1.1 2003/02/21 23:17:25 mr Exp $
+#
+
+CC=@CC@
+INCLUDE=-I../../include
+CFLAGS=@DEBUG@ -pipe -Wall ${INCLUDE} @CFLAGS@
+
+
+SRC = \
+	help.c \
+	stats.c
+
+OBJS = ${SRC:%.c=%.o}
+
+all: info comp
+
+build: info comp
+
+info:
+	@echo ""
+	@echo "*                   Building MultiServ commands                      *"
+	@echo " \`------------------------------------------------------------------´"
+
+comp: ${OBJS}
+
+.SUFFIXES: .c .o
+
+.c.o:
+	${CC} ${CFLAGS} -c $< -o $@
+
+clean:
+	rm -f *.o

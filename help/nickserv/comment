@@ -1,0 +1,7 @@
+Syntax: COMMENT <registered nickname> <ADD|REM|LIST> [comment|id]
+     
+You can attach comments to a registered nickname. It would be
+appropriate if you experience issues with the user.
+     
+SEE ALSO:
+  -

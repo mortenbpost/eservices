@@ -1,0 +1,8 @@
+Syntax: INFO [registered nickname]
+   
+Displays information about the given nickname. If nickname
+is not given it will display information about your current
+nick and settings.
+   
+SEE ALSO:
+  REGISTER, AUTH, SET

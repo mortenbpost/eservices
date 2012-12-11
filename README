@@ -1,0 +1,43 @@
+             Eservices - Exiled.Net IRC Services
+            -------------------------------------
+
+Introduction
+------------
+
+Eservices is an advanced tool for administering an IRC Network, and as 
+well a complete set of services including nickserv, chanserv, operserv
+and a special universal serv. It is a pseudo server compatible with the
+P10 Protocol and the specification.  The main aims are to be highly 
+efficient, user friendly, and extendible.
+
+You can read about all recent changes in the ChangeLog file, and you 
+can find more information about the releases in the NEWS file.
+
+Compatibility
+-------------
+
+Eservices are being developed on the latest FreeBSD-stable available.
+Although eservices strive towards being compatible with the most systems
+possible if you are using GNU make.
+
+Eservices has been tested on the following systems:
+
+* FreeBSD 4.x 
+Tested on 4.1, 4.2, 4.3, and 4.7-STABLE (x86) 
+
+  
+If you have tested eservices on a system not listed here, we would very
+much like to hear from you.
+
+Installation
+------------
+
+The INSTALL file contains detailed information about the installation.
+
+Contacts
+--------
+
+The AUTHORS file contains a list of all people who contributed to this
+piece of software.
+
+Bugs should be reported to one of the core developers.

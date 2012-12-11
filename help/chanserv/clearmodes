@@ -1,0 +1,7 @@
+Syntax: CLEARMODES <#channel>
+ 
+This command will clear all channel modes set on <#channel> including
+bans.
+ 
+SEE ALSO:
+  -

@@ -1,0 +1,19 @@
+Syntax: BAN <#channel> <nickname|banmask> [duration]
+ 
+This command is used for banning one or more persons from the 
+<#channel>.
+ 
+You can specify [duration] and the ban will stay there until it
+expires, but you don't have to.
+ 
+Duration is entered either as seconds, or using the following format:
+  %[number]d = number days,    ex %10d for 10 days
+  %[number]h = number hours,   ex %30h for 30 hours
+  %[number]m = number minutes, ex %45m for 45 minutes
+  %[number]s = number seconds, ex %59s for 59 seconds
+   
+You can also mix the above like:
+  %1h30m for 1 hour and 30 minutes
+ 
+SEE ALSO:
+  UNBAN, KICK, KICKBAN

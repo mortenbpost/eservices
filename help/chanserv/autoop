@@ -1,0 +1,8 @@
+Syntax: AUTOOP <#channel> [registered nickname]
+   
+If AUTOOP is toggled on, it will automaticly op the nick when it joins
+<#channel> or when the user authenticates.  If the [registered nickname]
+argument is missing it will toggle AUTOOP for you on <#channel>
+  
+SEE ALSO:
+  OP, OPME

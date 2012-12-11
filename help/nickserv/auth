@@ -1,0 +1,11 @@
+Syntax: AUTH [registered nickname] <password>
+       
+After you have registered a nickname you will need to authenticate
+to it each time you logon the network. This is done using the AUTH
+command.
+   
+It is required that you authenticate before you can use the services'
+features.
+      
+SEE ALSO:
+  REGISTER, GHOST
