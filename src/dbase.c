@@ -23,6 +23,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <mysql.h>
+#include <string.h>
 
 #include "setup.h"
 #include "dbase.h"

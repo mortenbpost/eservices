@@ -3,10 +3,10 @@
 
 # Process this file with autoconf to produce a configure script.
 
-AC_INIT([Exiled.Net IRC Services], [], [the_real@nerdheaven.dk])
+AC_INIT([Exiled.Net IRC Services], [x.x], [the_real@nerdheaven.dk])
 AC_CONFIG_SRCDIR([src/chanserv.c])
 AC_LANG(C)
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([Exiled.Net IRC Services], [x.x])
 
 dnl Checks for programs.
 AC_PROG_CC
